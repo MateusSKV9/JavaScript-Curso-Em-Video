@@ -6,19 +6,43 @@
     <title>Primeiro exercício</title>
     <style>
         body {
-            background-color: rgb(235, 235, 0);
+            background-color: white;
             font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button:hover {
+            background-color: rgb(60, 255, 0);
         }
     </style>
 </head>
-<body>
+<body id="body">
     <h1>Olá, Mundo!</h1>
     <h2>Já me livrei da maldição!</h2>
+
+    <button onclick="mudarFundo()">Mudar cor</button>
 
     <script>
         window.alert('Meu primeiro exercício!')
         window.confirm('Está gostando de programar em JS?')
         window.prompt('Qual é o seu nome?')
+
+        function mudarFundo() {
+            if(body.style.background == "white") {
+                body.style.background = "black"
+                body.style.color = "white"
+            } else {
+                body.style.background = "white"
+                body.style.color = "black"
+            }
+        }
+
+        // Isto é um comentário
+
+        /*
+            Aqui também
+            é 
+            Comentário
+        */
     </script>
 </body>
 </html>
