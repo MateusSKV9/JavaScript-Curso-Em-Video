@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de nacionalidade</h1>
+    <label for="inac">Digite o nome de seu país: </label>
+    <input type="text" name="nac" id="inac" placeholder="país">
+    <button onclick="verificar()">Verificar</button>
+    <div id="res"></div>
+
+    <script>
+        function verificar() {
+            var ent1 = document.getElementById('inac')
+            var country = ent1.value
+            var res = document.getElementById('res')
+
+            res.innerHTML = `Morando no ${country}. <br>`
+            if(country == 'Brasil' || country == 'Brazil') {
+                res.innerHTML += `Você é brasileiro.`
+            } else {
+                res.innerHTML += `Você é estrageiro.`
+            }
+        }
+    </script>
+</body>
+</html>
