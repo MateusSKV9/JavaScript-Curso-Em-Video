@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+    <style>
+        div#area {
+            height: 100px;
+            width: 100px;
+            line-height: 100px;
+            text-align: center;
+            color: white;
+            background-color: rgb(253, 0, 110);
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerHTML = 'Clicou!'
+            a.style.background = 'green'
+        }
+
+        function entrar() {
+            a.innerHTML = 'Entrou!'
+        }
+
+        function sair() {
+            a.innerHTML = 'Saiu!'
+            a.style.background = ''
+        }
+    </script>
+</body>
+</html>
