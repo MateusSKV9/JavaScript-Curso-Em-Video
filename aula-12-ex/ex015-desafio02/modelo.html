@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="iano">Ano de Nascimento: </label>
+                <input type="number" name="ano" id="iano" placeholder="ano">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="sex" id="imas" checked> 
+                <label for="imas">Masculino</label>
+                <input type="radio" name="sex" id="ifem"> 
+                <label for="ifem">Feminino</label>
+            </p>
+            <input type="submit" value="Verificar" onclick="verificar()">
+        </div>
+        <div id="res">
+            <p id="msg">Preencha os dados acima para ver o resultado.</p>
+            <img id="img" src="" alt="foto">
+        </div>
+    </section>
+    <footer>
+        <p><i>&copy; Mateus Santos - CursoEmVideo</i></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
