@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(0, 132, 255);
+    color:white ;
+    font: normal 1em arial;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.375);
+}
+
+
+div#res {
+    display: flex;
+}
